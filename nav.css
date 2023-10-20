@@ -74,21 +74,22 @@ nav {
   }
   
   #bePro {
-    background: black;
-    color: white;
+    background: #242424;
+    color: #e3e3e3;
+    height: 100%;
   }
   
   #bePro:hover {
-    background: white;
-    color: black;
+    background: #e3e3e3;
+    color: #242424;
   }
   
   #submitWebsite {
     background-color: none;
-    color: black;
+    color: #242424;
   }
   
   #submitWebsite:hover {
     background-color: #242424;
-    color: #d4d4d4;
+    color: #e3e3e3;
   }

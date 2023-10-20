@@ -1,7 +1,7 @@
 #marquee {
     display: flex;
     height: 50px;
-    background: black;
+    background: #242424;
     overflow: hidden;
   }
   
@@ -13,9 +13,9 @@
     line-height: 50px;
     text-align: center;
     font-weight: 400;
-    font-size: 1.5rem;
-    color: white;
-    background-color: black;
+    font-size: 1rem;
+    color: #e3e3e3;
+    background-color: #242424;
     cursor: pointer;
     padding: 0rem 0rem 0rem 2rem;
     -moz-transform: translateX(100%);
@@ -46,14 +46,13 @@
     text-align: center;
     font-weight: 400;
     color: #242424;
-    cursor: pointer;
     padding: 0rem 0rem 0rem 2rem;
     -moz-transform: translateX(100%);
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
-    -moz-animation: scroll-left 0.5s linear infinite;
-    -webkit-animation: scroll-left 0.5s linear infinite;
-    animation: scroll-left 5s linear infinite;
+    -moz-animation: scroll-left 1s linear infinite;
+    -webkit-animation: scroll-left 1s linear infinite;
+    animation: scroll-left 10s linear infinite;
   }
 
 
