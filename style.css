@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+#marquee {
+  display: flex;
+  height: 50px;
+  background: black;
+  overflow: hidden;
+}
+
+#marquee p {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 400;
+  color: white;
+  padding: 0rem 0rem 0rem 2rem;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: scroll-left 1.5s linear infinite;
+  -webkit-animation: scroll-left 1.5s linear infinite;
+  animation: scroll-left 15s linear infinite;
+}
+
+@-moz-keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes scroll-left {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: white;
+  align-items: center;
+}
+
+nav h2 {
+  padding-right: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav li a:hover {
+  color: gray;
+}
+
+#searchwrapper {
+  display: relative;
+  width: 60%;
+  margin: 0 0.5rem 0 0;
+}
+
+#searchbar {
+  display: flex;
+  justify-content: left;
+  padding: 1rem;
+  width: 100%;
+  margin: 0;
+  margin-right:1rem; 
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border-width: 0.01rem;
+  background-color: #d4d4d4;
+  font-color: white;
+  border-color: #d4d4d4;
+  border-style: none;
+}
+
+#searchbar::placeholder {
+  color: #9c9c9c;
+}
+
+#searchbar:focus {
+  border-width: 0;
+}
+
+input {
+  border: none;
+}
+
+nav button {
+  margin-left: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border-width: 0.01rem;
+  cursor: pointer;
+}
+
+#bePro {
+  background: black;
+  color: white;
+}
+
+#bePro:hover {
+  background: white;
+  color: black;
+}
+
+#submitWebsite {
+  background-color: white;
+  color: black;
+}
+
+#submitWebsite:hover {
+  background-color: black;
+  color: white;
+}
